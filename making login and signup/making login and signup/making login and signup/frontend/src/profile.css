@@ -1,0 +1,101 @@
+.profile-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+  width: 100%; /* Ensure the header spans the full width */
+  background-color: #d3aaff; /* Soft green */
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between; /* Align items within the header */
+  align-items: center; /* Center items vertically */
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+/* Style the header links */
+.header a {
+  color: #D3F1DF; /* Light green text */
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Style the active/current link */
+.header a.active {
+  background-color: #e6a8ff; /* Dark green */
+  color: #D3F1DF; /* Light green text */
+}
+
+/* Float the link section to the right */
+.header-right {
+  display: flex;
+  gap: 15px; /* Add spacing between right-aligned links */
+}
+
+/* Notes App title */
+h1 {
+  color: #5A6C57; /* Darker green */
+  margin-bottom: 20px;
+  margin-top: 100px; /* Add space below the header */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.profile-container h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-actions button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.form-actions button[type="button"] {
+  background-color: #f44336;
+}
+
+.form-actions button[type="submit"] {
+  background-color: #4CAF50;
+}
