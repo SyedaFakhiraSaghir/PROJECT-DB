@@ -1,0 +1,163 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./pexels-artempodrez-7233109.jpg'); /* Light purple background */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    width: 100%; /* Ensure the header spans the full width */
+    background-color: #e1c1f4; /* Soft purple */
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between; /* Align items within the header */
+    align-items: center; /* Center items vertically */
+    box-sizing: border-box; /* Include padding in width calculations */
+    border-radius: 15px;
+}
+
+/* Style the header links */
+.header a {
+    color: #f1e0ff; /* Light purple text */
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+/* Style the logo link */
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Style the active/current link */
+.header a.active {
+    background-color: #7f4fa0; /* Darker purple */
+    color: #f0d0ff; /* Light purple text */
+}
+
+/* Float the link section to the right */
+.header-right {
+    display: flex;
+    gap: 15px; /* Add spacing between right-aligned links */
+}
+
+/* Notes App title */
+h1 {
+    color: #ffffff; /* Dark purple */
+    margin-bottom: 20px;
+    margin-top: 100px; /* Add space below the header */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+
+input, textarea {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #9a6aff; /* Soft purple border */
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px;
+    background-color: #7f4fa0; /* Dark purple button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #9a6aff; /* Lighter purple on hover */
+}
+
+/* Notes list */
+#notes-list {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#notes-list div {
+    background-color: #f1e0ff; /* Light purple background */
+    border: 1px solid #9a6aff; /* Soft purple border */
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#notes-list h3 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #7f4fa0; /* Dark purple */
+}
+
+#notes-list p {
+    margin: 0;
+    font-size: 14px;
+    color: #7f4fa0; /* Dark purple text */
+}
+
+/* Buttons in notes */
+#notes-list button {
+    align-self: flex-start;
+    padding: 8px;
+    font-size: 14px;
+    background-color: #9a6aff; /* Soft purple */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#notes-list button:hover {
+    background-color: #7f4fa0; /* Darker purple */
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 500px) {
+    .header {
+        flex-direction: column; /* Stack header items vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+    .header a {
+        display: block;
+        text-align: left;
+    }
+    .header-right {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

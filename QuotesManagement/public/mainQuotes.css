@@ -1,0 +1,111 @@
+body {
+    background-image: url('/bg_image.jpeg'); 
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    color: white;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: none;
+
+
+}
+.header {
+    width: 100%; /* Ensure the header spans the full width */
+    background-color: #6A4C93; /* Purple */
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between; /* Align items within the header */
+    align-items: center; /* Center items vertically */
+    box-sizing: border-box; /* Include padding in width calculations */
+  }
+  
+  /* Style the header links */
+  .header a {
+    color: #EBDFFF; /* Light purple text */
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo link */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  /* Style the active/current link */
+  .header a.active {
+    background-color: #4B2C61; /* Dark purple */
+    color: #EBDFFF; /* Light purple text */
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    display: flex;
+    gap: 15px; /* Add spacing between right-aligned links */
+  }
+  
+  /* Notes App title */
+  h1 {
+    color: #512A6A; /* Darker purple */
+    margin-bottom: 20px;
+    margin-top: 100px; /* Add space below the header */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#categories{
+    margin-top: 2px;
+}
+
+button {
+    margin: 12px 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background: #c459d5;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: #a686ca;
+}
+
+#quote-display {
+    
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    background: none;
+    border-radius: 5px;
+}
+
+#quote-category {
+    font-size: 1.5em;
+    color: white;
+}
+
+#quote-text {
+    font-size: 1.2em;
+    color: white;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <a href="#default" class="logo">RAAS</a>
+        <div class="header-right">
+          <a class="active" href="http://localhost:3000/home">Home</a>
+        </div>
+    </div>
+    <h1>Notes App</h1>
+    <form id="noteForm">
+        <input type="text" id="title" name="title" placeholder="Title" required>
+        <textarea id="content" name="content" placeholder="Content" required></textarea>
+        <button type="submit">Add Note</button>
+    </form>
+    <div id="notes-list"></div>
+    <script src="script.js"></script>
+</body>
+</html>

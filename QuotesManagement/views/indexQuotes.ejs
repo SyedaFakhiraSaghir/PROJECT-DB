@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes Management</title>
+    <link rel="stylesheet" href="/mainQuotes.css">
+</head>
+<body>
+    <div class="header">
+        <a href="#default" class="logo">RAAS</a>
+        <div class="header-right">
+            <a class="active" href="http://localhost:3000/home">Home</a>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Quotes Management</h1>
+        
+        <!-- Categories Button -->
+        <button id="categories-btn">Categories</button>
+
+        <!-- Categories Dropdown -->
+        <div id="categories" style="display: none;">
+            <button class="quote-button" data-category="Motivational">Motivational</button>
+            <button class="quote-button" data-category="Leadership">Leadership</button>
+            <button class="quote-button" data-category="Success">Success</button>
+            <button class="quote-button" data-category="Life">Life</button>
+            <button class="quote-button" data-category="Relationship">Relationship</button>
+            <button class="quote-button" data-category="Happiness">Happiness</button>
+        </div>
+
+        <!-- Quote Display Section -->
+        <i>
+        <div id="quote-display">
+            <h2 id="quote-category"></h2>
+            <p id="quote-text"></p>
+        </div>
+        </i>
+        <!-- File Upload Form -->
+        <form action="/upload-quotes" method="POST" enctype="multipart/form-data" id="upload-form">
+            <div>
+                <label for="authorsFile">Upload Authors CSV:</label>
+                <input type="file" name="authorsFile" id="authorsFile" required>
+            </div>
+            <div>
+                <label for="quotesFile">Upload Quotes CSV:</label>
+                <input type="file" name="quotesFile" id="quotesFile" required>
+            </div>
+            <button type="submit">Upload</button>
+        </form>
+        
+    </div>
+
+    <script src="/clientQuotes.js"></script>
+</body>
+</html>

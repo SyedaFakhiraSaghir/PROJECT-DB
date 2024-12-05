@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Groceries</title>
+    <link rel="stylesheet" href="public/grocery-main.css">
+</head>
+<body>
+    <div class="header">
+        <a href="#default" class="logo">RAAS</a>
+        <div class="header-right">
+            <a class="active" href="http://localhost:3000/home">Home</a>
+        </div>
+    </div>
+    <div class="hero">
+        <h1>GROCERIES</h1>
+        <p>Manage your grocery list efficiently</p>
+    </div>
+    <div class="background">
+        <a href="/add?userId=<%= userId %>"><button class="btn">Add Grocery +</button></a>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Unit</th>
+                    <th>Brand</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% groceries.forEach(grocery => { %>
+                    <tr>
+                        <td><%= grocery.item %></td>
+                        <td><%= grocery.quantity %></td>
+                        <td><%= grocery.unit %></td>
+                        <td><%= grocery.brand || 'Unknown' %></td>
+                        <td>
+                            <a href="/edit/<%= grocery.id %>?userId=<%= userId %>">Edit</a>
+                            <a href="/delete/<%= grocery.id %>?userId=<%= userId %>" onclick="return confirm('Are you sure you want to delete this item?')">Delete</a>
+                        </td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; AP</p>
+        </div>
+    </footer>
+</body>
+</html>
